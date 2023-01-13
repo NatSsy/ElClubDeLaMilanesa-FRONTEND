@@ -20,12 +20,12 @@ export const Footer = () => {
                         <li className="nav-item"><a href="#" className="nav-link px-2 text-white">S</a></li>
                     </ul>
                     <ul className='nav justify-content-center border-bottom pb-3 mb-3'>
-                        <li className=''></li>
+                        <li className='text-white'>face</li>
                         <li></li>
                         <li></li>
                         <li></li>
                     </ul>
-                    <p className="text-center text-white">&copy; 2023 Los Burgesesç, Inc</p>
+                    <p className="text-center text-white">&copy; 2023 Los Burgeses, Inc</p>
                 </footer>
             </div>
         </div>

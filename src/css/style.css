@@ -20,6 +20,11 @@
 
 /* ======= NAV BAR ======= */
 
+/* ======= MAIN ======= */
+body{
+    background-image: url(/src/assets/img/bg/background.jpg);
+}
+/* ======= MAIN ======= */
 /* ======= FOOTER ======= */
 
 

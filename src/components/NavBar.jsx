@@ -15,7 +15,7 @@ export const NavBar = () => {
                         <li><a href="#" className="nav-link px-2 link-light pe-4">Menus</a></li>
                         <li><a href="#" className="nav-link px-2 link-light pe-4">Pedidos</a></li>
                         <li><a href="#" className="nav-link px-2 link-light pe-4">Sobre Nosotros</a></li>
-                        <li><a href="#" className="nav-link px-2 link-light pe-4">Contacto</a></li>
+                        <li><a href="#" className="nav-link px-2 link-light pe-4">Contactanos</a></li>
                     </ul>
 
                     <div className="btn col-md-3 text-end">
