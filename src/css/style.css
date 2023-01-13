@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ======= NAV BAR ======= */
+.textNav{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.btn .btnNav{
+    font-family:'Bebas Neue', cursive ;
+    font-size: 25px;
+    color: white;
+    transition: 0.3;
+    overflow: auto;
+}
+
+.btn .btnNav:hover{
+    background-color: red;
+}
+
+/* ======= NAV BAR ======= */
+
+/* ======= FOOTER ======= */
+
+
+
+/* ======= FOOTER ======= */
