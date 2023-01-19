@@ -4,7 +4,10 @@
 .textNav{
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
+    transition: 0.3s;
 }
+
+
 
 .btn .btnNav{
     font-family:'Bebas Neue', cursive ;
@@ -15,8 +18,10 @@
 }
 
 .btn .btnNav:hover{
-    background-color: red;
+    background-color: white;
+    color: black;
 }
+
 
 /* ======= NAV BAR ======= */
 
