@@ -1,8 +1,8 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css"
-import { NavBar } from './components/NavBar'
-import { Footer } from './components/Footer'
-import { Main } from './components/Main'
+import { Footer } from './ui/components/Footer'
+import { Cards } from './ui/components/Cards'
+import NavBarMenu from './ui/components/NavBarMenu'
+
 
 
 
@@ -11,11 +11,10 @@ export const App = () => {
     <div>
       <body>
         <header>
-          <NavBar />
+          <NavBarMenu/>
         </header>
         <main>
-          <h1>Los Burgeses</h1>
-          <Main />
+          <Cards />
         </main>
         <footer>
           <Footer />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Main = () => {
+export const Cards = () => {
     return (
         <div>
             <div class="album py-5">
