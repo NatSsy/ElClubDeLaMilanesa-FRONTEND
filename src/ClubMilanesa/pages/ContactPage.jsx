@@ -2,6 +2,6 @@ import React from 'react'
 
 export const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <div>ESTO ES DE LA DEV</div>
   )
 }
