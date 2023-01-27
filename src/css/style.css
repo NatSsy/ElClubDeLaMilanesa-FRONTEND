@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* ======= NAV BAR ======= */
+
 .textNav{
     font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-    transition: 0.3s;
+    font-size: 25px;
 }
 
 .textNav:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .btn .btnNav{
-    font-family:'Bebas Neue', cursive ;
-    font-size: 25px;
     color: white;
+font-family: "Bebas Neue", cursive;
+    font-size: 25px;
     transition: 0.3;
     overflow: auto;
 }
@@ -34,6 +35,23 @@ body{
 /* ======= MAIN ======= */
 /* ======= FOOTER ======= */
 
+.icon {
+    display: flex;
+    font-size: 35px;
+}
 
+.fa{
+    color: white;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+
+.f{
+transition: 0.5s;
+}
+.f:hover{
+    transform: scale(1.5);
+}
 
 /* ======= FOOTER ======= */
