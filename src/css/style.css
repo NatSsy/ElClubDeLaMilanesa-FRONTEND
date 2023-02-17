@@ -12,7 +12,7 @@
     transition: 0.3s;
 }
 
-.btn .btnNav{
+.bton .btnNav{
     color: white;
 font-family: "Bebas Neue", cursive;
     font-size: 25px;
@@ -20,7 +20,7 @@ font-family: "Bebas Neue", cursive;
     overflow: auto;
 }
 
-.btn .btnNav:hover{
+.bton .btnNav:hover{
     background-color: white;
     color: black;
 }
@@ -55,3 +55,9 @@ transition: 0.5s;
 }
 
 /* ======= FOOTER ======= */
+
+.logo{
+    width: 2.3cm;
+    height: 2.3cm;
+    border-radius: 50% ;
+}
