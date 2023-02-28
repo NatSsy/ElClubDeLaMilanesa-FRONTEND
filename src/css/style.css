@@ -35,14 +35,22 @@ body{
 
 /* ======= CAROUSEL ======= */
 
-.carousel-mila .mila{
-    height: 600px;
-    object-fit:cover;
-    
+.carouselCDLM .carousel-mila img{
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
 }
 
-/* ======= CAROUSEL ======= */
+.card {
+    width: 18rem;
+}
 
+.card-CDLM{
+    display: flex;
+    justify-content: space-around;
+
+}
+/* ======= CAROUSEL ======= */
 
 /* ======= MAIN ======= */
 
