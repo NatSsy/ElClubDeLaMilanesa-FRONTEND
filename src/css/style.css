@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 /* ======= NAV BAR ======= */
 
 .textNav{
@@ -32,7 +32,35 @@ font-family: "Bebas Neue", cursive;
 body{
     background-image: url(/src/assets/img/bg/background.jpg);
 }
+
+/* ======= CAROUSEL ======= */
+
+.carousel-mila .mila{
+    height: 600px;
+    object-fit:cover;
+    
+}
+
+/* ======= CAROUSEL ======= */
+
+
 /* ======= MAIN ======= */
+
+.contact .tittleEdit {
+    font-family: 'Coming Soon', cursive;
+    color: white;
+    font-size:larger;
+}
+
+.contact {
+    background-image: url(/src/assets/img/bg/bg-contact.jpg);
+    height: 15cm;
+    width: 10cm;
+    border: 20cm;
+    border-color: brown;
+    border-radius: 50px;
+}
+
 /* ======= FOOTER ======= */
 
 .icon {

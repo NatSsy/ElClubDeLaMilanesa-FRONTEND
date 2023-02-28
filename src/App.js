@@ -9,7 +9,6 @@ export const App = () => {
   return (
     <div>
       <AppRouter/>
-      <Card/>
     </div>
   )
 }

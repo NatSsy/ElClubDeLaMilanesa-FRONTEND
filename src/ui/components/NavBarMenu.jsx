@@ -2,7 +2,7 @@
 import { NavLink, useNavigate } from 'react-router-dom'
 import React from 'react'
 
-import logo from "../../assets/img/logo/logo.png"
+import logo from "../../assets/img/logo/logo.png" //FIJATE ESTO PARA TRAER LAS FOTOS DEL CARRUSEL
 
 export const NavBarMenu = () => {
 
@@ -39,7 +39,7 @@ export const NavBarMenu = () => {
 
           <div className="bton col-md-3 text-end">
             <button onClick={onLogout} className="btn me-2 btnNav">Ingresar</button>
-            <button onClick={onRegister} className="btn btnNav">Resgistrarse</button>
+            <button onClick={onRegister} className="btn me-2 btnNav">Resgistrarse</button>
           </div>
         </header>
       </div>
