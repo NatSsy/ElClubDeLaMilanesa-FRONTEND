@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { NavBar } from './components/NavBar'
 import { Footer } from './components/Footer'
 import { Main } from './components/Main'
+import {  Menus } from './components/Menus'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 
@@ -11,6 +13,12 @@ export const App = () => {
     <div>
       <body>
         <header>
+
+          <BrowserRouter>
+            <Routes>
+              <Route path="/Menus" element={<Menus/>}/>
+            </Routes>
+          </BrowserRouter>
           <NavBar />
         </header>
         <main>
