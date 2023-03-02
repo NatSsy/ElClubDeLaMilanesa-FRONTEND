@@ -5,6 +5,7 @@ import mila3 from "../../assets/img/carrusel/mila3.jpg"
 import mila4 from "../../assets/img/carrusel/mila4.jpg"
 
 
+
 export const HomePage = () => {
     return (
         <div>
@@ -47,29 +48,19 @@ export const HomePage = () => {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className='container card-CDLM p-5'>
-                <div className="card">
-                <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="container d-flex justify-content-center main-cards">
+                <div className='row body-card'>
+                    <div class="col bg-white m-5 card">
+                        Column
                     </div>
-                </div>
-                <div className="card">
-                <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col bg-white m-5 card">
+                        Column
                     </div>
-                </div>
-                <div className="card">
-                <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col bg-white m-5 card">
+                        Colum
+                    </div>
+                    <div class="col bg-white m-5 card">
+                        Colum
                     </div>
                 </div>
             </div>

@@ -29,8 +29,11 @@ font-family: "Bebas Neue", cursive;
 /* ======= NAV BAR ======= */
 
 /* ======= MAIN ======= */
+
+
 body{
-    background-image: url(/src/assets/img/bg/background.jpg);
+background-image: url(/src/assets/img/bg/background.jpg);
+display: block;
 }
 
 /* ======= CAROUSEL ======= */
@@ -41,15 +44,14 @@ body{
     object-position: center;
 }
 
-.card {
-    width: 18rem;
-}
-
-.card-CDLM{
+.body-card .card{
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
+    min-width: 300px;
+    min-height: 150px;
 }
+
+
 /* ======= CAROUSEL ======= */
 
 /* ======= MAIN ======= */
@@ -64,8 +66,8 @@ body{
     background-image: url(/src/assets/img/bg/bg-contact.jpg);
     height: 15cm;
     width: 10cm;
-    border: 20cm;
     border-color: brown;
+    border: 20cm;
     border-radius: 50px;
 }
 
