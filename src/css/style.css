@@ -99,3 +99,67 @@ transition: 0.5s;
     height: 2.3cm;
     border-radius: 50% ;
 }
+
+/* ======= AboutPage Start ======= */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .info h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+}
+
+.card .info p {
+    color: #fff;
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .card {
+    width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+    width: calc(100% - 40px);
+    }
+}
+
+/* ======= AboutPage End ======= */
+
