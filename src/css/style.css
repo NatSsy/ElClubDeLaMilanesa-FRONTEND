@@ -102,6 +102,23 @@ transition: 0.5s;
 
 /* ======= AboutPage Start ======= */
 
+.intro  {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.695);
+    width: 80rem;
+    box-shadow: 10px 0px 10px rgb(105, 103, 103);
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 3rem;
+    margin: 4rem;
+    
+}
+
+.titulo-abaut{
+    color: rgb(0, 0, 0);
+    text-shadow: 10px 0px 10px rgb(105, 103, 103);
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -149,16 +166,23 @@ transition: 0.5s;
     font-size: 16px;
 }
 
+@media (max-width: 1024px) {
+    .card {
+        width: calc(33.33% - 40px);
+    }
+}
+
 @media (max-width: 768px) {
     .card {
-    width: calc(50% - 40px);
+        width: calc(50% - 40px);
     }
 }
 
 @media (max-width: 480px) {
     .card {
-    width: calc(100% - 40px);
+        width: calc(100% - 40px);
     }
+
 }
 
 /* ======= AboutPage End ======= */
