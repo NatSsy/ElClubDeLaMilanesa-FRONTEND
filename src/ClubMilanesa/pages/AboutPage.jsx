@@ -37,7 +37,7 @@ const AboutPage = () => {
           <img src={brendan} alt="Imagen 3"/>
           <div className="info">
             <h2>Brendan Heindl</h2>
-            <p>Descripción 1</p>
+            <p></p>
           </div>
         </div>
   
@@ -53,7 +53,7 @@ const AboutPage = () => {
           <img src={mauro} alt="Imagen 5"/>
           <div className="info">
             <h2>Mauro Ibañez</h2>
-            <p>Descripción 1</p>
+            <p>"Te convertiras en lo que sos, no en lo que quieres"</p>
           </div>
         </div>
   

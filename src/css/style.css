@@ -136,6 +136,7 @@ transition: 0.5s;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    padding: 10px 0px;
 }
 
 .card:hover img {
