@@ -94,6 +94,4 @@ export const RegisterPage = () => {
 
         </div>
     );
-
-
 }

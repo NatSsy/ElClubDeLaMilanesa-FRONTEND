@@ -9,13 +9,16 @@
 }
 
 
+.btn .btnNav{
+    font-family:'Bebas Neue', cursive ;
+    font-size: 25px;
+}
 .textNav:hover{
     transform: scale(1.1);
     transition: 0.3s;
 }
 
 .bton .btnNav{
-
     color: white;
 font-family: "Bebas Neue", cursive;
     font-size: 25px;
@@ -24,8 +27,8 @@ font-family: "Bebas Neue", cursive;
 }
 
 
-.bton .btnNav:hover{
 
+.bton .btnNav:hover{
     background-color: white;
     color: black;
 }

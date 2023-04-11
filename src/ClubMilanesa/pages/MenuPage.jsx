@@ -12,8 +12,9 @@ import Col from 'react-bootstrap/Col';
 
 export const MenuPage = () => {
 
+
     return (
-        <div>
+        
             <Container >
                 <Row>
                     {DiffMenus.map((menu) => {
@@ -40,6 +41,4 @@ export const MenuPage = () => {
                     })}
                 </Row>
             </Container>
-        </div>
-    )
-}
+    )}
