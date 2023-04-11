@@ -2,8 +2,8 @@ import React from 'react'
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import { useParams } from 'react-router-dom'
-import { MenuSeleccion } from './helpers/MenuPorSeleccion';
-import { ModalPedido } from './ModalPedido';
+import { MenuSeleccion } from '../components/helpers/MenuPorSeleccion';
+import { ModalPedido } from '../components/ModalPedido';
 
 import Card from 'react-bootstrap/Card';
 

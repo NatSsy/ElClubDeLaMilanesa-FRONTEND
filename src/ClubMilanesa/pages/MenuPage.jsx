@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { DiffMenus } from './data-Mnus/DiffMenus'
+import { DiffMenus } from '../components/data-Mnus/DiffMenus'
 
 import Card from 'react-bootstrap/Card';
 
@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 
 
 
-export const Main = () => {
+export const MenuPage = () => {
 
     return (
         <div>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 /* ======= NAV BAR ======= */
+
 .textNav{
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
@@ -8,16 +9,23 @@
 }
 
 
+.textNav:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
-.btn .btnNav{
-    font-family:'Bebas Neue', cursive ;
-    font-size: 25px;
+.bton .btnNav{
+
     color: white;
+font-family: "Bebas Neue", cursive;
+    font-size: 25px;
     transition: 0.3;
     overflow: auto;
 }
 
-.btn .btnNav:hover{
+
+.bton .btnNav:hover{
+
     background-color: white;
     color: black;
 }
@@ -26,12 +34,73 @@
 /* ======= NAV BAR ======= */
 
 /* ======= MAIN ======= */
+
+
 body{
-    background-image: url(/src/assets/img/bg/background.jpg);
+background-image: url(/src/assets/img/bg/background.jpg);
+display: block;
 }
+
+/* ======= CAROUSEL ======= */
+
+.carouselCDLM .carousel-mila img{
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.body-card .card{
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+
+/* ======= CAROUSEL ======= */
+
 /* ======= MAIN ======= */
+
+.contact .tittleEdit {
+    font-family: 'Coming Soon', cursive;
+    color: white;
+    font-size:larger;
+}
+
+.contact {
+    background-image: url(/src/assets/img/bg/bg-contact.jpg);
+    height: 15cm;
+    width: 10cm;
+    border-color: brown;
+    border: 20cm;
+    border-radius: 50px;
+}
+
 /* ======= FOOTER ======= */
 
+.icon {
+    display: flex;
+    font-size: 35px;
+}
 
+.fa{
+    color: white;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+
+.f{
+transition: 0.5s;
+}
+.f:hover{
+    transform: scale(1.5);
+}
 
 /* ======= FOOTER ======= */
+
+.logo{
+    width: 2.3cm;
+    height: 2.3cm;
+    border-radius: 50% ;
+}
