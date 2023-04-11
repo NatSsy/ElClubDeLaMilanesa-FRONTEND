@@ -1,38 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
+import "bootstrap/dist/css/bootstrap.min.css"
 
-export const ModalPedido = ({ precio }) => {
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import { RealizarPedido } from './helpers/ValidarPedido';
+
+
+
+
+export const ModalPedido = ({ NombreMenu, PrecioMenu }) => {
+  const FechayHora = new Date();
+  console.log(FechayHora);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  //funcion para el submit
+  const ValidarPedido = RealizarPedido(NombreMenu, PrecioMenu, FechayHora);
+
+
   return (
     <div>
-        <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Realizar Pedido</button>
-
-        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h1 className="modal-title fs-5" id="exampleModalLabel">New message</h1>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-      </div>
-      <div className="modal-body">
-        <form>
-          <div className="mb-3">
-            <label for="recipient-name" className="col-form-label">Recipient:</label>
-            <input type="text" className="form-control" id="recipient-name"></input>
-          </div>
-          <div className="mb-3">
-            <label for="message-text" className="col-form-label">{precio}</label>
-            
-          </div>
-        </form>
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" className="btn btn-primary">Realizar Pedido</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+      <Button variant="light" onClick={handleShow}>
+        Realizar el pedido
+      </Button>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header className='bg-dark text-white' closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className='bg-dark text-white' >{NombreMenu} con valor de: {PrecioMenu}
+          <form id='validarUsuario'>
+            <label>email</label>
+            <input type='email' className="form-control w-30" id="email" aria-describedby="emailHelp" placeholder="bob23@gmail.com" />
+          </form>
+        </Modal.Body>
+        <Modal.Footer className='bg-dark text-white' >
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   )
 }
