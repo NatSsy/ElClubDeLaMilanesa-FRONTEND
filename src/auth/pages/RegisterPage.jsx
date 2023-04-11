@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../css/login-register.css";
 import menuApi from "../../api/menuApi";
+import { useNavigate } from "react-router-dom";
 export const RegisterPage = () => {
 
     const [name, setName] = useState("");
@@ -9,6 +10,7 @@ export const RegisterPage = () => {
     const [confirmarPassword, setConfirmarPassword] = useState("")
     const [error, setError] = useState(false)
     const [msgError, setMsgError] = useState("")
+    const navigate = useNavigate()
     const startRegister = async (name, email, password) => {
         try {
             const resp = await menuApi.post("/auth/new", {
@@ -16,9 +18,12 @@ export const RegisterPage = () => {
                 email,
                 password,
             })
-            console.log(resp.response)
-        } catch (error) {
-            console.log(error)
+
+
+
+            navigate("/home")
+        } catch ({response}) {
+            console.log(response.data)
         }
     }
     const handleSubmit = (e) => {

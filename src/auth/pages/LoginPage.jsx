@@ -1,16 +1,40 @@
 import React, { useState } from "react";
 import "../../css/login-register.css";
+import menuApi from "../../api/menuApi";
+import { useNavigate } from "react-router-dom";
 
 export const LoginPage = () => {
-    const [email,setEmail] = useState("");
-    const [password,setPassword] = useState("");
-    const [error,setError] = useState(false)
-    const [msgError,setMsgError] = useState("")
-    const handleSubmit = (e) =>{
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState(false)
+    const [msgError, setMsgError] = useState("")
+    const navigate = useNavigate()
+
+    const startLogin = async (email, password) => {
+        try {
+            const resp = await menuApi.post("/auth/", {
+                email,
+                password,
+            });
+
+            if(resp.data.rol === "usuario"){
+                navigate("/home")
+            }else{
+                navigate("/admin")
+            }
+            console.log(resp)
+        } catch ({response}) {
+            console.log(response.data.msg)
+        }
+    }
+
+
+    const handleSubmit = (e) => {
         e.preventDefault();
 
+        startLogin(email, password)
         //validaciones
-        if(!email || !password){
+        if (!email || !password) {
             setError(true)
             setMsgError("todos los campos son obligatorios");
             return;
@@ -20,38 +44,38 @@ export const LoginPage = () => {
     }
 
 
-    return( 
+    return (
         <div className="registro">
-            
-        <form className="formulario" onSubmit={handleSubmit}>
-        <h1>¿Ya tienes una cuenta?</h1>
-        {error ? <h3>{msgError}</h3> : ""}
-            <div className="input-contenedor">
-                <i class="fa-solid fa-envelope"></i>
-                <input
-                type="email"
-                id="email"
-                placeholder="Correo Electronico"
-                value={email}
-                onChange={(e) => setEmail (e.target.value)}
-                />
-            </div>
-            <div className="input-contenedor">
-                <i class="fa-sharp fa-solid fa-key"></i>
-                <input
-                type="password"
-                id="password"
-                placeholder="Contraseña"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                />
-                <label htmlFor=""></label>
-            </div>
-            <label > <input type="checkbox" />Al continuar, aceptas las Condiciones de uso y el Aviso de privacidad.</label>
-            <p>Si todavia no tienes tu cuenta por favor registrate aqui <a href="/Register" className="link">Registrarme</a></p>
-            <button type="submit" className="boton">Registrarme</button>
-        </form>
-        
-    </div>
+
+            <form className="formulario" onSubmit={handleSubmit}>
+                <h1>¿Ya tienes una cuenta?</h1>
+                {error ? <h3>{msgError}</h3> : ""}
+                <div className="input-contenedor">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Correo Electronico"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                </div>
+                <div className="input-contenedor">
+                    <i class="fa-sharp fa-solid fa-key"></i>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Contraseña"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <label htmlFor=""></label>
+                </div>
+                <label > <input type="checkbox" />Al continuar, aceptas las Condiciones de uso y el Aviso de privacidad.</label>
+                <p>Si todavia no tienes tu cuenta por favor registrate aqui <a href="/Register" className="link">Registrarme</a></p>
+                <button type="submit" className="boton">Registrarme</button>
+            </form>
+
+        </div>
     )
 }
