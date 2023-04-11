@@ -11,7 +11,7 @@ const AboutPage = () => {
         <div className="texto">
             <h1 className="titulo-abaut text-center">ACERCA DE NOSOTROS</h1>
             <p className="intro text-center text-white py-4">
-                Recordá: No se puede comprar la felicidad. Pero si una sanguche de milanesa que es casi lo mismo.
+                Recordá: No se puede comprar la felicidad. Pero si un sanguche de milanesa que es casi lo mismo.
             </p>
         </div>
     <div className="container">
