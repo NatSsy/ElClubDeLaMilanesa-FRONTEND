@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../css/login-register.css";
-import menuApi from "../../api/menuapi";
+import menuApi from "../../api/menuApi";
 export const RegisterPage = () => {
 
     const [name, setName] = useState("");
@@ -10,13 +10,14 @@ export const RegisterPage = () => {
     const [error, setError] = useState(false)
     const [msgError, setMsgError] = useState("")
     const startRegister = async (name, email, password) => {
-        try{
+        try {
             const resp = await menuApi.post("/auth/new", {
                 name,
                 email,
                 password,
             })
-        }catch(error){
+            console.log(resp.response)
+        } catch (error) {
             console.log(error)
         }
     }
