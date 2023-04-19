@@ -33,7 +33,7 @@ export const MenuPage = () => {
                                         {menu.precio}
                                     </Card.Text>
                                     <NavLink to={`/Menus/${menu.categoria}`} >
-                                        Ver Menus...
+                                        prueba...
                                     </NavLink>
                                 </Card.Body>
                             </Card>
